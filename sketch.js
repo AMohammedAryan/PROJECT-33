@@ -12,8 +12,7 @@ const Body = Matter.Body;
   var displayCriteria;
 
   var gameState = "start";
- 
-//var particles = [];
+
 var plinkos = [];
 var divisions = [];
 
@@ -71,9 +70,6 @@ function draw() {
 
    if(displayCriteria === true){
 
-      console.log(turn);
-      //console.log(particle.body.position.y);
-
       if(particle.body.position.y > 779){
 
          if(particle.body.position.x < 260){
@@ -126,13 +122,6 @@ function draw() {
          text(200, b, 550)
       }
    }
-
-   //function mousePressed(){
-     /* if(frameCount%60===0){
-         particles.push(new Particle(random(width/2-30, width/2+30), 10));
-         score++;
-      }*/
-   //}
 }
 
 function mousePressed(){
